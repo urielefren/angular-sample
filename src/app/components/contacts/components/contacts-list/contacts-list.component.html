@@ -1,0 +1,21 @@
+<h1>
+  CONTACT LIST
+</h1>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Message</th>
+    <th>Email</th>
+    <th>Actions</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts; let i = index" [attr.data-index]="i">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.message }}</td>
+      <td>{{ contact.email }}</td>
+      <td>
+        <button [id]="'editContact' + index" (click)="editContact(contact)">Edit Contact</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

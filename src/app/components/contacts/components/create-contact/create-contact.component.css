@@ -1,0 +1,4 @@
+.ng-invalid:not(form) {
+    background-color: #a94442;
+    /* red */
+}

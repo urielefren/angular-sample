@@ -1,0 +1,11 @@
+<h1 *ngIf="!isEditMode()">NEW CONTACT</h1>
+<h1 *ngIf="isEditMode()">EDIT CONTACT</h1>
+<form (ngSubmit)="onSubmit(f)" [formGroup]="contactForm">
+  <label for="nameContact">Name:</label>
+  <input placeholder="name" name="nameContact" id="nameContact" formControlName="name"/>
+  <label for="emailContact">Email:</label>
+  <input placeholder="email" name="emailContact" id="emailContact" formControlName="email" />
+  <label for="messageContact">Message:</label>
+  <input placeholder="message" name="messageContact" id="messageContact" formControlName="message" />
+  <button type="submit" >send</button>
+</form>

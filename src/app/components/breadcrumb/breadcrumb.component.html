@@ -1,0 +1,5 @@
+<nav>
+  <a routerLink="/about" routerLinkActive="active">About</a> |
+  <a routerLink="/contacts" routerLinkActive="active">Contacts</a> |
+  <a routerLink="/login" *ngIf="!isLogged" routerLinkActive="active">Login</a>
+</nav>

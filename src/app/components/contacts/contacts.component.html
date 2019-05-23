@@ -1,0 +1,3 @@
+<button (click)="addContact()">New Contact</button>
+<router-outlet (activate)="onRouterOutletActivate($event)"></router-outlet>
+<app-contacts-list [contacts]="contacts" (emitEditContact)="editContact($event)"></app-contacts-list>
